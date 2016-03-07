@@ -1,16 +1,16 @@
-# Name: Chaoting Liu
+# Name: Chaoting Liu #
  * Gender: Male
  * Age: 24
-##  Study at: NCCU
+## Study at: NCCU ##
  * Major in: Management Information Systems, Business Department
-##  Dropped from: NCTU
+## Dropped from: NCTU ##
  * Was in: Undergraduate Honors Program of Nano Science and Engineering
-##  Experiences: 
+## Experiences: ##
  * Full time Linux desktop user since 2004.
  * Contribution to [UbuntuTW](http://ubuntu-tw.org) community since 2007.
  * Senior packager of [Chakra Project](https://chakraos.org) (a linux distro) since 2010.
  * Senior translator for FOSS softwares and web tools. eg. [1][]
-##  Pro at:
+## Pro at:##
  * Customer service
   - desktop customization, user experience optimization
   - general community support, forum administration, patch search and application
