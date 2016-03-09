@@ -1,0 +1,22 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: BrLi′s
+email: brli [at] chakraos.org
+description: > # this means to ignore newlines until "baseurl:"
+  This site is created because I′m quite bored, and have just read about
+  how to create custom site with github and Jekyll.<br>
+  I′ll take this site as simple promotion about what I′m doing now and some
+  daily digest.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://brli.github.io" # the base hostname & protocol for your site
+twitter_username: brli7848
+github_username:  brli
+
+# Build settings
+markdown: kramdown

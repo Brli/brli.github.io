@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BrLi′s</title>
+    <description>This site is created because I′m quite bored, and have just read about how to create custom site with github and Jekyll.&lt;br&gt; I′ll take this site as simple promotion about what I′m doing now and some daily digest.
+</description>
+    <link>https://brli.github.io/</link>
+    <atom:link href="https://brli.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 10 Mar 2016 01:07:18 +0800</pubDate>
+    <lastBuildDate>Thu, 10 Mar 2016 01:07:18 +0800</lastBuildDate>
+    <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>第一次面試</title>
+        <description>&lt;p&gt;我的腦袋不是很靈光，面是的長官應該也看出來了。&lt;/p&gt;
+
+&lt;p&gt;嗯…首先呢，這次的面談也說不上不愉快，應該還算滿有趣的。&lt;/p&gt;
+
+&lt;p&gt;而且也算是，我第一次跟陌生人直接面對面聊天這麼久。雖然很多時候都是「聽一個老人碎碎念」 by 長官。&lt;/p&gt;
+
+&lt;p&gt;其實我不是很曉得該怎麼表現自己，一方面可能自己對自己標準有點誇張，一方面也可以說是對自己沒有信心。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;–以下，流水帳–&lt;/h2&gt;
+
+&lt;p&gt;難得終於放晴的天氣，出門，先從後門騎到前門，吃早餐，稍微跟同學寒暄一下，又騎出來，順著 Google Map 找到公館來。&lt;/p&gt;
+
+&lt;p&gt;先四處找停車位，接著讚嘆於這麼多中式早餐店&lt;/p&gt;
+
+&lt;p&gt;然後就進到工作室去報到了&lt;/p&gt;
+
+&lt;p&gt;沒錯，履歷表完全 NG，甚至可以說是完全沒寫的程度。&lt;/p&gt;
+
+&lt;p&gt;接著因為大樓施工的關係，面試的長官就提議我們去隔壁的星巴克喝一杯。&lt;/p&gt;
+
+&lt;p&gt;就這樣聊了一個多小時，其實我覺得聊的很快，比起網路上的對話快很多。有點跟不上（？&lt;/p&gt;
+
+&lt;p&gt;哪壺不提提哪壺，居然提到在學校遇到的挫折，嗯，就當作是考題吧？&lt;/p&gt;
+
+&lt;p&gt;聊完以後，就接了簡單的功課回來了。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 10 Mar 2016 00:25:35 +0800</pubDate>
+        <link>https://brli.github.io/jekyll/update/2016/03/10/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://brli.github.io/jekyll/update/2016/03/10/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
