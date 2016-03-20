@@ -46,7 +46,7 @@ permalink: /about/
   
   - package dependencies tree mantainance
 
-[1]: https://www.transifex.com/user/profile/brli7848/ (Transifex)
-[2]: https://github.com/brli7848 (Github)
+[1]: https://www.transifex.com/user/profile/brli7848/  "Transifex"
+[2]: https://github.com/brli7848  "Github"
 [3]: http://git.chakraos.org "Chakra's official git repo"
 
