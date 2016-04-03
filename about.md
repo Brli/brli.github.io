@@ -40,10 +40,6 @@ permalink: /about/
 
   - package management tools aka. APT, pacman.
   
-  - sed: inline editing.
-  
-  - git: formal patch format creation, massive collaboration. eg. [2][], [3][] (hard to find committer, I know.)
-  
   - package dependencies tree mantainance
 
 [1]: https://www.transifex.com/user/profile/brli7848/  "Transifex"
