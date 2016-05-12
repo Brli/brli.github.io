@@ -7,11 +7,14 @@ categories: systemd container
 
 前言
 ====
-硬體虛擬化已經行之有年，我們這帶的初心者大概通常都是由 Oracle VirtualBox 入坑
+硬體虛擬化已經行之有年，我們這代的初心者大概通常都是由 Oracle VirtualBox 入坑
+
 稍微有人帶路的或許是由 VMware Station 入手
 
 然後到了最近 Docker(DevOps) 的興盛，以及各種「容器」技術的發展（概念上應該都源自於古早的 chroot）
+
 有了 Xen、KVM、LXC 等
+
 現在連惡名昭彰的 SystemD 也來軋一角，推出了內建的 `systemd-nsapwn` 服務
 
 系統需求
@@ -66,7 +69,7 @@ categories: systemd container
 傳遞影音
 =======
 
-截至目前為止，我們都還是只有終端機界面
+截至目前為止，我們都還是只有終端機界面，以下只是其中一種實做，還有其他實做方式(`xhost +local:`之類的)
 
 1. 在主系統上開啟一個分離的 X 環境
 
@@ -99,6 +102,11 @@ categories: systemd container
 6. 這時候你就可以盡情的、無痕的，使用這個虛擬機ギリギリ愛了！
 
   ![示意圖](https://raw.githubusercontent.com/Brli/brli.github.io/master/_images/systemd-nspawn-example.jpg)
+  
+後記
+====
+
+其實我只是想要貼ギリギリ愛而已！
 
 [1]: https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman "上游的原始檔"
 [2]: https://git.archlinux.org/svntogit/packages.git/plain/trunk/mirrorlist?h=packages/pacman-mirrorlist "上游的原始檔"
