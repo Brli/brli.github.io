@@ -51,12 +51,12 @@ categories: systemd container
     sudo systemd-nspawn -D /rootpath
     
 6. 作一些基本的 Arch Linux 調整吧
-    
+
   * 調整時區
   * 調整語系 
   * 調整 pacman
-    
-         # pacman-key --init
+
+        # pacman-key --init
     
         # pacman-key --populate archlinux
     
