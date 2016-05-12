@@ -26,14 +26,14 @@ categories: systemd container
 
 1. 首先取得 Arch Linux 的 pacman.conf
 
-  [最新版](https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman)
-
     wget 'https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman' -O pacman.conf
+    
+  [最新版](https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman)
 
 2. 假設主機系統不是 Arch Linux，那表示我們並沒有對 pacman 作簽章，也就表示 pacman 會在驗證下載的安裝檔時出錯，所以我們得把 SigLevel 調低
 
     sed 's/Required DatabaseOptional/Never/g' -i pacman.conf
-    
+
 3. (選擇性)你也可以調整一下你要用的鏡像站：
 
    把 `Include = /etc/pacman.d/mirrorlist` 
