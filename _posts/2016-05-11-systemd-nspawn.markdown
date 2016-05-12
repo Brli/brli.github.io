@@ -89,7 +89,7 @@ categories: systemd container
     
 12. 這時候你就可以盡情的、無痕的，使用這個虛擬機ギリギリ愛了！
 
-  ![示意圖](../images/systemd-nspawn-example.jpg)
+  ![示意圖](https://raw.githubusercontent.com/Brli/brli.github.io/master/_images/systemd-nspawn-example.jpg)
 
 [1]: https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman "上游的原始檔"
 [2]: https://git.archlinux.org/svntogit/packages.git/plain/trunk/mirrorlist?h=packages/pacman-mirrorlist "上游的原始檔"
