@@ -79,13 +79,13 @@ categories: systemd container
 
     在主系統上以一般使用者執行
 
-        $ pactl load-module module-native-protocol-unix socket=/path/to/socket
+    $ pactl load-module module-native-protocol-unix socket=/path/to/socket
     
     這會讓主系統上的 PulseAudio 有一個新的 socket litsener
  
 11. 使用正確的環境變數登入你的容器（當然，容器內也得安裝 PulseAudio ）
 
-        $ sudo systemd-nspawn -D /rootpath --user=test --setenv=DISPLAY=:1 --bind=/socketpath --setenv=PULSE_SERVER=/socketpath
+    $ sudo systemd-nspawn -D /rootpath --user=test --setenv=DISPLAY=:1 --bind=/socketpath --setenv=PULSE_SERVER=/socketpath
     
 12. 這時候你就可以盡情的、無痕的，使用這個虛擬機ギリギリ愛了！
 
