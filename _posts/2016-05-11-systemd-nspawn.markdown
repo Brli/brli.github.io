@@ -51,7 +51,7 @@ categories: systemd container
    * 調整時區
    * 調整語系 
    * 調整 pacman
-   
+
 		# pacman-key --init
 		
 		# pacman-key --populate archlinux
