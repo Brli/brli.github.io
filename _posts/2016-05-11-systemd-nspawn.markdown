@@ -51,9 +51,9 @@ categories: systemd container
  * 調整語系
  * 調整 pacman
  
-  # pacman-key --init
-  # pacman-key --populate archlinux
-  # pacman -Syu
+    # pacman-key --init
+    # pacman-key --populate archlinux
+    # pacman -Syu
   
  * 新增使用者
  * 安裝你要用的圖形界面
@@ -69,7 +69,7 @@ categories: systemd container
 8. 使用正確的方式開啟 X 環境
 
     $ startx
-    
-    要注意的是，各個桌面環境不盡相同，請自行參閱 ArchWiki 相關的篇章
+
+要注意的是，各個桌面環境不盡相同，請自行參閱 ArchWiki 相關的篇章
 
 9. 
