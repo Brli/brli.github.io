@@ -43,7 +43,7 @@ categories: systemd container
 
 4. 安裝 Arch Linux 系統
 
-	$ pacstarp -GM -C /path/to/the/pacman.conf -d /path/to/the/root/of/the/vm base base-devel
+	# pacstarp -GM -C /path/to/the/pacman.conf -d /path/to/the/root/of/the/vm base base-devel
     
 5. 進入那個子系統
 
