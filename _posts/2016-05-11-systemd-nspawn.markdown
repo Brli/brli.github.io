@@ -77,7 +77,7 @@ categories: systemd container
     
 2. 使用新增的使用者登入你的容器
 
-	$ sudo systemd-nspawn -D /rootpath --user=*<username>* --setenv=DISPLAY=:1
+	$ sudo systemd-nspawn -D /rootpath --user=*username* --setenv=DISPLAY=:1
     
    **這裡的`:1`務必要對應第一步最後面啟動的位置**
 
@@ -97,7 +97,7 @@ categories: systemd container
  
 5. 使用正確的環境變數登入你的容器（當然，容器內也得安裝 PulseAudio ）
 
-	$ sudo systemd-nspawn -D /rootpath --user=*<username>* --setenv=DISPLAY=:1 --bind=/socketpath --setenv=PULSE_SERVER=/socketpath
+	$ sudo systemd-nspawn -D /rootpath --user=*username* --setenv=DISPLAY=:1 --bind=/socketpath --setenv=PULSE_SERVER=/socketpath
     
 6. 這時候你就可以盡情的、無痕的，使用這個虛擬機ギリギリ愛了！
 
