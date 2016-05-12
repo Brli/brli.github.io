@@ -53,7 +53,9 @@ categories: systemd container
    * 調整 pacman
    
 		# pacman-key --init
+		
 		# pacman-key --populate archlinux
+		
 		# pacman -Syu
 
    * 新增使用者
