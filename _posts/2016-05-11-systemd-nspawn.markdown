@@ -52,11 +52,11 @@ categories: systemd container
     
 - 作一些基本的 Arch Linux 調整吧
 
- * 調整時區
+  * 調整時區
  
- * 調整語系
+  * 調整語系
  
- * 調整 pacman
+  * 調整 pacman
  
     # pacman-key --init
     
@@ -64,9 +64,9 @@ categories: systemd container
     
     # pacman -Syu
     
- * 新增使用者
+  * 新增使用者
  
- * 安裝你要用的圖形界面
+  * 安裝你要用的圖形界面
 
 - 在主系統上開啟一個分離的 X 環境
 
