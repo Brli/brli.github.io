@@ -48,14 +48,16 @@ categories: systemd container
     
 6. 作一些基本的 Arch Linux 調整吧
 
-  * 調整時區
-  * 調整語系 
-  * 調整 pacman
+   * 調整時區
+   * 調整語系 
+   * 調整 pacman
+   
         # pacman-key --init
         # pacman-key --populate archlinux
         # pacman -Syu
-  * 新增使用者
-  * 安裝你要用的圖形界面
+
+   * 新增使用者
+   * 安裝你要用的圖形界面
 
 7. 在主系統上開啟一個分離的 X 環境
 
@@ -65,21 +67,21 @@ categories: systemd container
 
     $ sudo systemd-nspawn -D /rootpath --user=test --setenv=DISPLAY=:1
     
-  **這裡的`:1`務必要對應 6. 最後面啟動的位置**
+   **這裡的`:1`務必要對應 6. 最後面啟動的位置**
 
 9. 在容器中使用正確的方式開啟 X 環境
 
     $ startx
 
-  **各個桌面環境不盡相同，請自行參閱 ArchWiki 相關的篇章**
+   **各個桌面環境不盡相同，請自行參閱 ArchWiki 相關的篇章**
 
 10. 賦予此系統發聲的能力（以 PulseAudio 為例）
 
-  在主系統上以一般使用者執行
+   在主系統上以一般使用者執行
 
     $ pactl load-module module-native-protocol-unix socket=/path/to/socket
     
-  這會讓主系統上的 PulseAudio 有一個新的 socket litsener
+   這會讓主系統上的 PulseAudio 有一個新的 socket litsener
  
 11. 使用正確的環境變數登入你的容器（當然，容器內也得安裝 PulseAudio ）
 
