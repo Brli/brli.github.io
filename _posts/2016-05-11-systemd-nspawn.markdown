@@ -79,7 +79,7 @@ categories: systemd container
 
 	$ sudo systemd-nspawn -D /rootpath --user=test --setenv=DISPLAY=:1
     
-   **這裡的`:1`務必要對應 6. 最後面啟動的位置**
+   **這裡的`:1`務必要對應第一步最後面啟動的位置**
 
 3. 在容器中使用正確的方式開啟 X 環境
 
@@ -106,7 +106,13 @@ categories: systemd container
 後記
 ====
 
-其實我只是想要貼ギリギリ愛而已！
+單純使用 `xhost +` 的話，會直接使用系統的視窗管理員，就沒有必要產生桌面環境了，直接執行圖形化界面就能像是一般程式使用
+
+這時候的 `DISPLAY=` 參數是 `:0`
+
+有看到使用 Alsa 的，但是，倫家懶惰
+
+最後，其實我只是想要貼ギリギリ愛而已！！！XDDD
 
 [1]: https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman "上游的原始檔"
 [2]: https://git.archlinux.org/svntogit/packages.git/plain/trunk/mirrorlist?h=packages/pacman-mirrorlist "上游的原始檔"
