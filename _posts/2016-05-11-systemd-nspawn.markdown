@@ -25,6 +25,7 @@ categories: systemd container
 =======
 
 - 首先取得 Arch Linux 的 pacman.conf
+
   [最新版](https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman)
 
     wget 'https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman' -O pacman.conf
@@ -34,8 +35,11 @@ categories: systemd container
     sed 's/Required DatabaseOptional/Never/g' -i pacman.conf
     
 - (選擇性)你也可以調整一下你要用的鏡像站：
+
    把 `Include = /etc/pacman.d/mirrorlist` 
+
    改成 `Server = url://$repo/os/$arch`
+
    最新的鏡像站列表在[此](https://git.archlinux.org/svntogit/packages.git/plain/trunk/mirrorlist?h=packages/pacman-mirrorlist)
 
 - 安裝 Arch Linux 系統
@@ -49,7 +53,9 @@ categories: systemd container
 - 作一些基本的 Arch Linux 調整吧
 
  * 調整時區
+ 
  * 調整語系
+ 
  * 調整 pacman
  
     # pacman-key --init
@@ -59,6 +65,7 @@ categories: systemd container
     # pacman -Syu
     
  * 新增使用者
+ 
  * 安裝你要用的圖形界面
 
 - 在主系統上開啟一個分離的 X 環境
