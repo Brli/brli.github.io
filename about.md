@@ -48,4 +48,18 @@ permalink: /about/
 
 ## Donation Acception ##
 
-<!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/tw/webapps/mpp/paypal-popup?locale.x=zh_TW" title="了解 PayPal 的服務" onclick="javascript:window.open('https://www.paypal.com/tw/webapps/mpp/paypal-popup?locale.x=zh_TW','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png" alt="使用 PayPal 立即購" /></a></td></tr></table><!-- PayPal Logo -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="MY2EA4RTAV39G">
+<table>
+<tr><td><input type="hidden" name="on0" value="Donation">Donation</td></tr><tr><td><select name="os0">
+	<option value="選項 1">選項 1 NT$30 TWD</option>
+	<option value="選項 2">選項 2 NT$60 TWD</option>
+	<option value="選項 3">選項 3 NT$90 TWD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="TWD">
+<input type="image" src="https://www.paypalobjects.com/zh_TW/TW/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal － 更安全、更簡單的線上付款方式！">
+<img alt="" border="0" src="https://www.paypalobjects.com/zh_TW/i/scr/pixel.gif" width="1" height="1">
+</form>
+
