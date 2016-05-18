@@ -46,3 +46,6 @@ permalink: /about/
 [2]: https://github.com/brli7848  "Github"
 [3]: http://git.chakraos.org "Chakra's official git repo"
 
+## Donation Acception ##
+
+<!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/tw/webapps/mpp/paypal-popup?locale.x=zh_TW" title="了解 PayPal 的服務" onclick="javascript:window.open('https://www.paypal.com/tw/webapps/mpp/paypal-popup?locale.x=zh_TW','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png" alt="使用 PayPal 立即購" /></a></td></tr></table><!-- PayPal Logo -->
