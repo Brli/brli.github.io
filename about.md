@@ -45,12 +45,3 @@ permalink: /about/
 [1]: https://www.transifex.com/user/profile/brli7848/  "Transifex"
 [2]: https://github.com/brli7848  "Github"
 [3]: http://git.chakraos.org "Chakra's official git repo"
-
-## Donation Acception ##
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="MY2EA4RTAV39G">
-<input type="image" src="https://www.paypalobjects.com/zh_TW/TW/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal － 更安全、更簡單的線上付款方式！">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
