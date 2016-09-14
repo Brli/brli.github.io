@@ -9,13 +9,13 @@ categories: systemd container
 ====
 硬體虛擬化已經行之有年，我們這代的初心者大概通常都是由 Oracle VirtualBox 入坑
 
-稍微有人帶路的或許是由 VMware Station 入手
+稍微有人帶路的或許是由 VMware Workstation 入手
 
 然後到了最近 Docker(DevOps) 的興盛，以及各種「容器」技術的發展（概念上應該都源自於古早的 chroot）
 
 有了 Xen、KVM、LXC 等
 
-現在連惡名昭彰的 SystemD 也來軋一角，推出了內建的 `systemd-nsapwn` 服務
+現在連惡名昭彰的 SystemD 也來軋一角，推出了內建的 `systemd-nspawn` 服務
 
 系統需求
 =======
