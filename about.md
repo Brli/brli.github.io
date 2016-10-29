@@ -40,7 +40,7 @@ permalink: /about/
 
   - package management tools aka. APT, pacman.
   
-  - package dependencies tree mantainance
+  - package dependencies tree maintenance.
 
 [1]: https://www.transifex.com/user/profile/brli7848/  "Transifex"
 [2]: https://github.com/brli7848  "Github"
