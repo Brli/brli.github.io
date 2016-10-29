@@ -22,9 +22,9 @@ permalink: /about/
 
  * Full time Linux desktop user since 2004.
  
- * Contribution to [UbuntuTW](http://ubuntu-tw.org) community since 2007.
+ * Contribution to [UbuntuTW](https://ubuntu-tw.org) community since 2007.
  
- * Senior packager of [Chakra Project](https://chakraos.org) (a linux distro) since 2010.
+ * Senior packager of [Chakra Project](https://chakralinux.org) (a linux distro) since 2010.
  
  * Senior translator for FOSS softwares and web tools. eg. [1][]
 
@@ -44,4 +44,4 @@ permalink: /about/
 
 [1]: https://www.transifex.com/user/profile/brli7848/  "Transifex"
 [2]: https://github.com/brli7848  "Github"
-[3]: http://git.chakraos.org "Chakra's official git repo"
+[3]: http://chakralinux.org/code "Chakra's official git repo"
