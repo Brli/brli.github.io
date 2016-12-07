@@ -65,9 +65,7 @@ $ sudo systemd-nspawn -D /rootpath
 
 ```bash
 ># pacman-key --init
-	
 ># pacman-key --populate archlinux
-		
 ># pacman -Syu
 ```
 
