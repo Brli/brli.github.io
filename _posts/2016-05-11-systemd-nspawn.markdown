@@ -29,15 +29,15 @@ categories: systemd container
 
 1. 首先取得 Arch Linux 的 pacman.conf [備註1][1]
 
-{% highlight bash %}
+
 $ wget 'https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman' -O pacman.conf
-{% endhighlight %}
+```
 
 2. 假設主機系統不是 Arch Linux，那表示我們並沒有對 pacman 作簽章，也就表示 pacman 會在驗證下載的安裝檔時出錯，所以我們得把 SigLevel 調低
 
-{% highlight bash %}
+
 $ sed 's/Required DatabaseOptional/Never/g' -i pacman.conf
-{% endhighlight %}
+```
 
 3. (選擇性)你也可以調整一下你要用的鏡像站 [備註2][2]
 
@@ -47,15 +47,15 @@ $ sed 's/Required DatabaseOptional/Never/g' -i pacman.conf
 
 4. 安裝 Arch Linux 系統
 
-{% highlight bash %}
+```bash
 # pacstarp -GM -C /path/to/the/pacman.conf -d /path/to/the/root/of/the/vm base base-devel
-{% endhighlight %}
+```
 
 5. 進入那個子系統
 
-{% highlight bash %}
+```bash
 $ sudo systemd-nspawn -D /rootpath
-{% endhighlight %}
+```
 
 6. 作一些基本的 Arch Linux 調整吧
 
@@ -63,20 +63,20 @@ $ sudo systemd-nspawn -D /rootpath
    * 調整語系 
    * 調整 pacman
 
-{% highlight bash %}
-# pacman-key --init
+```bash
+&# pacman-key --init
 	
-# pacman-key --populate archlinux
+&# pacman-key --populate archlinux
 		
-# pacman -Syu
-{% endhighlight %}
+&# pacman -Syu
+```
 
    * 新增使用者
    * 安裝你要用的圖形界面
 
-{% highlight bash %}
-# pacman -S mate
-{% endhighlight %}
+```bash
+&# pacman -S mate
+```
 
 傳遞影音
 =======
@@ -85,23 +85,23 @@ $ sudo systemd-nspawn -D /rootpath
 
 1. 在主系統上開啟一個分離的 X 環境
 
-{% highlight bash %}
+```bash
 $ Xephyr -screen 1280x720 -glamor +xinerama -noreset :1
-{% endhighlight %}
+```
 
 2. 使用新增的使用者登入你的容器
 
-{% highlight bash %}
+```bash
 $ sudo systemd-nspawn -D /rootpath --user=*username* --setenv=DISPLAY=:1
-{% endhighlight %}
+```
 
    **這裡的`:1`務必要對應第一步最後面啟動的位置**
 
 3. 在容器中使用正確的方式開啟 X 環境
 
-{% highlight bash %}
+```bash
 $ startx
-{% endhighlight %}
+```
 
    **各個桌面環境不盡相同，請自行參閱 ArchWiki 相關的篇章**
 
@@ -109,17 +109,17 @@ $ startx
 
     在主系統上以一般使用者執行
 
-{% highlight bash %}
+```bash
 $ pactl load-module module-native-protocol-unix socket=/path/to/socket
-{% endhighlight %}
+```
 
     這會讓主系統上的 PulseAudio 有一個新的 socket litsener
  
 5. 使用正確的環境變數登入你的容器（當然，容器內也得安裝 PulseAudio ）
 
-{% highlight bash %}
+```bash
 $ sudo systemd-nspawn -D /rootpath --user=*username* --setenv=DISPLAY=:1 --bind=/socketpath --setenv=PULSE_SERVER=/socketpath
-{% endhighlight %}
+```
 
 6. 這時候你就可以盡情的、無痕的，使用這個虛擬機ギリギリ愛了！
 
