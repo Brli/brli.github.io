@@ -29,7 +29,9 @@ categories: systemd container
 
 1. 首先取得 Arch Linux 的 pacman.conf [備註1][1]
 
-	$ wget 'https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman' -O pacman.conf
+{% highlight bash %}
+$ wget 'https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman' -O pacman.conf
+{% endhighlight %}
 
 2. 假設主機系統不是 Arch Linux，那表示我們並沒有對 pacman 作簽章，也就表示 pacman 會在驗證下載的安裝檔時出錯，所以我們得把 SigLevel 調低
 
