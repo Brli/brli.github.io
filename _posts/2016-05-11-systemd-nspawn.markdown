@@ -29,13 +29,13 @@ categories: systemd container
 
 1. 首先取得 Arch Linux 的 pacman.conf [備註1][1]
 
-
+```bash
 $ wget 'https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman' -O pacman.conf
 ```
 
 2. 假設主機系統不是 Arch Linux，那表示我們並沒有對 pacman 作簽章，也就表示 pacman 會在驗證下載的安裝檔時出錯，所以我們得把 SigLevel 調低
 
-
+```bash
 $ sed 's/Required DatabaseOptional/Never/g' -i pacman.conf
 ```
 
@@ -48,7 +48,7 @@ $ sed 's/Required DatabaseOptional/Never/g' -i pacman.conf
 4. 安裝 Arch Linux 系統
 
 ```bash
-# pacstarp -GM -C /path/to/the/pacman.conf -d /path/to/the/root/of/the/vm base base-devel
+># pacstarp -GM -C /path/to/the/pacman.conf -d /path/to/the/root/of/the/vm base base-devel
 ```
 
 5. 進入那個子系統
@@ -64,18 +64,18 @@ $ sudo systemd-nspawn -D /rootpath
    * 調整 pacman
 
 ```bash
-&# pacman-key --init
+># pacman-key --init
 	
-&# pacman-key --populate archlinux
+># pacman-key --populate archlinux
 		
-&# pacman -Syu
+># pacman -Syu
 ```
 
    * 新增使用者
    * 安裝你要用的圖形界面
 
 ```bash
-&# pacman -S mate
+># pacman -S mate
 ```
 
 傳遞影音
