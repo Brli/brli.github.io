@@ -20,4 +20,3 @@ github_username:  brli
 
 # Build settings
 markdown: kramdown
-highlighter : pygments
