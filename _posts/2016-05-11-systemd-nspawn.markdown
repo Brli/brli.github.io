@@ -2,8 +2,8 @@
 layout: post
 title:  "使用 SystemD Nspawn 建立完整的桌面環境 - 以 Arch 為例"
 date:   2016-05-11 15:19:00 +0800
-comments: true
 categories: systemd container
+comments: true
 ---
 
 前言
