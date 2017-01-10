@@ -3,7 +3,6 @@ layout: post
 title:  "Kate Syntax Highlight and Frameworks"
 date:   2016-09-18 20:02:00 +0800
 categories: kate kf5 frameworks
-comments: true
 ---
 
 At the time when KDE is proting to its version 5, applications are split and separated into libs and main binaries, kate is no exception.
