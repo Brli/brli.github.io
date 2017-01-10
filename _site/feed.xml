@@ -6,9 +6,292 @@
 </description>
     <link>https://brli.github.io/</link>
     <atom:link href="https://brli.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 10 Mar 2016 01:07:18 +0800</pubDate>
-    <lastBuildDate>Thu, 10 Mar 2016 01:07:18 +0800</lastBuildDate>
-    <generator>Jekyll v3.0.3</generator>
+    <pubDate>Tue, 13 Dec 2016 23:46:44 +0800</pubDate>
+    <lastBuildDate>Tue, 13 Dec 2016 23:46:44 +0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>疑難排解之夜</title>
+        <description>&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+
+&lt;p&gt;There are two major known problem consider blank/black screen with current Chakra.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-first-is-described-as-below&quot;&gt;The first is described as below:&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;After the &lt;strong&gt;bootloader&lt;/strong&gt; and &lt;strong&gt;initial system&lt;/strong&gt;, I didn’t get &lt;strong&gt;display manager&lt;/strong&gt; up.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Where&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;bootloader&lt;/strong&gt;: GRUB, systemd-boot&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;initial system&lt;/strong&gt;: SystemD&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;display manager&lt;/strong&gt;: SDDM&lt;/p&gt;
+
+&lt;p&gt;Or&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;After startup, I can only get black screen with white cursor on top-left of the screen&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;the-solution&quot;&gt;The solution&lt;/h3&gt;
+
+&lt;p&gt;It is basically possibly mainly due to your system didn’t load graphic driver modules properly.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 13 Dec 2016 23:00:00 +0800</pubDate>
+        <link>https://brli.github.io/troubleshoot/display/sddm/graphic/2016/12/13/trouble-shoot-night.html</link>
+        <guid isPermaLink="true">https://brli.github.io/troubleshoot/display/sddm/graphic/2016/12/13/trouble-shoot-night.html</guid>
+        
+        
+        <category>troubleshoot</category>
+        
+        <category>display</category>
+        
+        <category>sddm</category>
+        
+        <category>graphic</category>
+        
+      </item>
+    
+      <item>
+        <title>Kate Syntax Highlight and Frameworks</title>
+        <description>&lt;p&gt;At the time when KDE is proting to its version 5, applications are split and separated into libs and main binaries, kate is no exception.&lt;/p&gt;
+
+&lt;p&gt;Originally (At KDE SC time), the source tree of kate contains main part, kate itself, and “katepart” as system/desktop integration (aka. being called when there is a demand to embeded text editor, eg. preview directly in Ark. display codes in KDevelop etc.)&lt;/p&gt;
+
+&lt;p&gt;Now that things are different. Within the consideration of framework guidelines, kate project is being split into fundamental library &lt;code&gt;ktexteditor&lt;/code&gt; as part of kf5(short of ‘kde framework 5’), and the application &lt;code&gt;kate&lt;/code&gt;. So are the functions and configurations available.&lt;/p&gt;
+
+&lt;p&gt;One of the basic feature of a text editor is the syntax highlight, and of course that plugin cannot include all the file/text extension/format on Earth. One of is lacking is the support for PKGBUILD.&lt;/p&gt;
+
+&lt;p&gt;This feature request is originated (not surprisingly) in Arch and a patch is submitted to kate at KDE SC and being adapted by (at least) KaOSx and Chakra, thus port over to modern kf5-plasma-application model as well.&lt;/p&gt;
+
+&lt;p&gt;Problem occurs at the testing period of frameworks 5.26.0 and application 16.08.1 of &lt;a href=&quot;https://chakralinux.org&quot;&gt;Chakra Project&lt;/a&gt;. Our test found that PKGBUILD no longer being highlighted. I wasn’t really into KDE development and codebase and package process, so I first thought it was a bug in the patch set of kate.&lt;/p&gt;
+
+&lt;p&gt;Out of the blue, after search for which package provides &lt;code&gt;/usr/share/katepart5/syntax/&lt;/code&gt;, I found that it is provided by ktexteditor.&lt;/p&gt;
+
+&lt;p&gt;However, there is only &lt;strong&gt;README.md&lt;/strong&gt; in the directory:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+$ ls -Al /usr/share/katepart5/syntax/
+---
+-rw-r--r-- 1 root root 0 18.09.2016 19:03 README.md
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The patch in our git repo indicates that part of bash.xml defines what paper sheet should be highlighted with certain color. But there aren’t any such XML files in the filesystem!&lt;/p&gt;
+
+&lt;p&gt;Where are all the highlight files lie in?&lt;/p&gt;
+
+&lt;p&gt;Looking into CMakeLists.txt of the directory of source code, It turns out that they are all bundled in the library&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/usr/lib/libKF5TextEditor.so.5.26.0&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Which, by design, we can’t modify it directly after compilation. (In theory we can, but not a good idea)&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 18 Sep 2016 20:02:00 +0800</pubDate>
+        <link>https://brli.github.io/kate/kf5/frameworks/2016/09/18/kate-syntax-ktexteditor.html</link>
+        <guid isPermaLink="true">https://brli.github.io/kate/kf5/frameworks/2016/09/18/kate-syntax-ktexteditor.html</guid>
+        
+        
+        <category>kate</category>
+        
+        <category>kf5</category>
+        
+        <category>frameworks</category>
+        
+      </item>
+    
+      <item>
+        <title>回收</title>
+        <description>&lt;p&gt;整理一顆五年前的硬碟&lt;/p&gt;
+</description>
+        <pubDate>Tue, 31 May 2016 20:56:00 +0800</pubDate>
+        <link>https://brli.github.io/virtualmachine/wordpress/server/2016/05/31/self-recycle.html</link>
+        <guid isPermaLink="true">https://brli.github.io/virtualmachine/wordpress/server/2016/05/31/self-recycle.html</guid>
+        
+        
+        <category>virtualmachine</category>
+        
+        <category>wordpress</category>
+        
+        <category>server</category>
+        
+      </item>
+    
+      <item>
+        <title>使用 SystemD Nspawn 建立完整的桌面環境 - 以 Arch 為例</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;前言&lt;/h1&gt;
+&lt;p&gt;硬體虛擬化已經行之有年，我們這代的初心者大概通常都是由 Oracle VirtualBox 入坑&lt;/p&gt;
+
+&lt;p&gt;稍微有人帶路的或許是由 VMware Workstation 入手&lt;/p&gt;
+
+&lt;p&gt;然後到了最近 Docker(DevOps) 的興盛，以及各種「容器」技術的發展（概念上應該都源自於古早的 chroot）&lt;/p&gt;
+
+&lt;p&gt;有了 Xen、KVM、LXC 等&lt;/p&gt;
+
+&lt;p&gt;現在連惡名昭彰的 SystemD 也來軋一角，推出了內建的 &lt;code&gt;systemd-nspawn&lt;/code&gt; 服務&lt;/p&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;系統需求&lt;/h1&gt;
+
+&lt;p&gt;一個 systemd(ver&amp;gt;183) 系統
+一個支援 bootstrap 的套件管理員（debootstrap, pacstarp, dnf, etc.）
+假如你要跨系統，就得確認你能成功用主機系統的 toolchain 編出你要的軟體(例如在 Debian 系中編譯 pacman)&lt;/p&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;安裝過程&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;首先取得 Arch Linux 的 pacman.conf &lt;a href=&quot;https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman&quot; title=&quot;上游的原始檔&quot;&gt;備註1&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ wget &#39;https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman&#39; -O pacman.conf
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;假設主機系統不是 Arch Linux，那表示我們並沒有對 pacman 作簽章，也就表示 pacman 會在驗證下載的安裝檔時出錯，所以我們得把 SigLevel 調低&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ sed &#39;s/Required DatabaseOptional/Never/g&#39; -i pacman.conf
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;(選擇性)你也可以調整一下你要用的鏡像站 &lt;a href=&quot;https://git.archlinux.org/svntogit/packages.git/plain/trunk/mirrorlist?h=packages/pacman-mirrorlist&quot; title=&quot;上游的原始檔&quot;&gt;備註2&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;把 &lt;code&gt;Include = /etc/pacman.d/mirrorlist&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;改成 &lt;code&gt;Server = url://$repo/os/$arch&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;安裝 Arch Linux 系統&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+&amp;gt;# pacstarp -GM -C /path/to/the/pacman.conf -d /path/to/the/root/of/the/vm base base-devel
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;進入那個子系統&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ sudo systemd-nspawn -D /rootpath
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;作一些基本的 Arch Linux 調整吧&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;調整時區&lt;/li&gt;
+      &lt;li&gt;調整語系&lt;/li&gt;
+      &lt;li&gt;調整 pacman&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+&amp;gt;# pacman-key --init
+&amp;gt;# pacman-key --populate archlinux
+&amp;gt;# pacman -Syu
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增使用者&lt;/li&gt;
+  &lt;li&gt;安裝你要用的圖形界面&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+&amp;gt;# pacman -S mate
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;傳遞影音&lt;/h1&gt;
+
+&lt;p&gt;截至目前為止，我們都還是只有終端機界面，以下只是其中一種實做，還有其他實做方式(&lt;code&gt;xhost +local:&lt;/code&gt;之類的)&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;在主系統上開啟一個分離的 X 環境&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ Xephyr -screen 1280x720 -glamor +xinerama -noreset :1
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;使用新增的使用者登入你的容器&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ sudo systemd-nspawn -D /rootpath --user=*username* --setenv=DISPLAY=:1
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;這裡的&lt;code&gt;:1&lt;/code&gt;務必要對應第一步最後面啟動的位置&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;在容器中使用正確的方式開啟 X 環境&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ startx
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;各個桌面環境不盡相同，請自行參閱 ArchWiki 相關的篇章&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;賦予此系統發聲的能力（以 PulseAudio 為例）&lt;/p&gt;
+
+    &lt;p&gt;在主系統上以一般使用者執行&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ pactl load-module module-native-protocol-unix socket=/path/to/socket
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;這會讓主系統上的 PulseAudio 有一個新的 socket litsener
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;使用正確的環境變數登入你的容器（當然，容器內也得安裝 PulseAudio ）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ sudo systemd-nspawn -D /rootpath --user=*username* --setenv=DISPLAY=:1 --bind=/socketpath --setenv=PULSE_SERVER=/socketpath
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;這時候你就可以盡情的、無痕的，使用這個虛擬機ギリギリ愛了！&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Brli/brli.github.io/master/_images/systemd-nspawn-example.jpg&quot; alt=&quot;示意圖&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;section-4&quot;&gt;後記&lt;/h1&gt;
+
+&lt;p&gt;單純使用 &lt;code&gt;xhost +&lt;/code&gt; 的話，會直接使用系統的視窗管理員，就沒有必要產生桌面環境了，直接執行 GUI 程式（例如在終端機輸入 &lt;code&gt;firefox&lt;/code&gt; ）就能像是一般程式使用&lt;/p&gt;
+
+&lt;p&gt;這時候的 &lt;code&gt;DISPLAY=&lt;/code&gt; 參數是 &lt;code&gt;:0&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;有看到使用 Alsa 的，但是，倫家懶惰&lt;/p&gt;
+
+&lt;p&gt;最後，其實我只是想要貼ギリギリ愛而已！！！XDDD&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 11 May 2016 15:19:00 +0800</pubDate>
+        <link>https://brli.github.io/systemd/container/2016/05/11/systemd-nspawn.html</link>
+        <guid isPermaLink="true">https://brli.github.io/systemd/container/2016/05/11/systemd-nspawn.html</guid>
+        
+        
+        <category>systemd</category>
+        
+        <category>container</category>
+        
+      </item>
     
       <item>
         <title>第一次面試</title>
@@ -39,8 +322,8 @@
 &lt;p&gt;聊完以後，就接了簡單的功課回來了。&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Mar 2016 00:25:35 +0800</pubDate>
-        <link>https://brli.github.io/jekyll/update/2016/03/10/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">https://brli.github.io/jekyll/update/2016/03/10/welcome-to-jekyll.html</guid>
+        <link>https://brli.github.io/jekyll/update/2016/03/10/first-intern-failure.html</link>
+        <guid isPermaLink="true">https://brli.github.io/jekyll/update/2016/03/10/first-intern-failure.html</guid>
         
         
         <category>jekyll</category>
