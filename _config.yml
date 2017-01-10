@@ -7,7 +7,7 @@
 
 # Site settings
 title: BrLi′s
-email: brli [at] chakraos.org
+email: brli [at] chakralinux.org
 description: > # this means to ignore newlines until "baseurl:"
   This site is created because I′m quite bored, and have just read about
   how to create custom site with github and Jekyll.<br>
@@ -17,6 +17,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://brli.github.io" # the base hostname & protocol for your site
 twitter_username: brli7848
 github_username:  brli
+disqus_shortname: "brli"
 
 # Build settings
 markdown: kramdown

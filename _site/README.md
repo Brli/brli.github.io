@@ -1,1 +1,1 @@
-Visit [brli.github.io] for more information
+Visit [brli.github.io](https://brli.github.io) for more information
