@@ -46,9 +46,10 @@ $ sed 's/Required DatabaseOptional/Never/g' -i pacman.conf
    改成 `Server = url://$repo/os/$arch`
 
 4. 安裝 Arch Linux 系統
+(依賴 arch-install-scripts)
 
 ```bash
-># pacstarp -GM -C /path/to/the/pacman.conf -d /path/to/the/root/of/the/vm base base-devel
+># pacstrap -GM -C /path/to/the/pacman.conf -d /path/to/the/root/of/the/vm base base-devel
 ```
 
 5. 進入那個子系統
