@@ -8,7 +8,7 @@ date:   2017-02-15 14:30:00 +0800
 
 I found this quite annoying when there were no wifi AP around but I′d like to get my phone online through the laptop some time ago.
 
-![failed to start]({{ site.url }}assets/wifi-1.png)
+![failed to start]({{ site.assets_url }}/_images/wifi-1.png)
 
 Later I realized that on a KDE/Plasma distro without specific preset for NetworkManager (such as Arch), one would find the following result when trying to start a wifi access point.
 

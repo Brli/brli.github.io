@@ -122,7 +122,7 @@ $ sudo systemd-nspawn -D /rootpath --user=*username* --setenv=DISPLAY=:1 --bind=
 
 6. 這時候你就可以盡情的、無痕的，使用這個虛擬機ギリギリ愛了！
 
-  ![示意圖](https://raw.githubusercontent.com/Brli/brli.github.io/master/_images/systemd-nspawn-example.jpg)
+  ![示意圖]({{ site.assets_url }}/_images/systemd-nspawn-example.jpg)
   
 後記
 ====
