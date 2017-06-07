@@ -49,7 +49,7 @@ $ sed 's/Required DatabaseOptional/Never/g' -i pacman.conf
 (依賴 arch-install-scripts)
 
 ```bash
-># pacstrap -GM -C /path/to/the/pacman.conf -d /path/to/the/root/of/the/vm base base-devel
+\# pacstrap -GM -C /path/to/the/pacman.conf -d /path/to/the/root/of/the/vm base base-devel
 ```
 
 5. 進入那個子系統
@@ -65,16 +65,16 @@ $ sudo systemd-nspawn -D /rootpath
    * 調整 pacman
 
 ```bash
-># pacman-key --init
-># pacman-key --populate archlinux
-># pacman -Syu
+\# pacman-key --init
+\# pacman-key --populate archlinux
+\# pacman -Syu
 ```
 
    * 新增使用者
    * 安裝你要用的圖形界面
 
 ```bash
-># pacman -S mate
+\# pacman -S mate
 ```
 
 傳遞影音
