@@ -57,4 +57,4 @@ Then, after reboot...dah!!! I was dropped to busybox rescue shell...
 
 After uninstall this package, one cannot use `poweroff` or `reboot` to control the power anymore.
 
-We may need `systemd poweroff`, `systemd reboot` instead.
+We may need `systemctl poweroff`, `systemctl reboot` instead.
