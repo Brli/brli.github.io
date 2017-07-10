@@ -82,3 +82,8 @@ The hint commands works
 
 4.
 `ANDROID_SDK_ROOT` is `~/Android/Sdk/`
+
+
+### Kudos
+
+@ettoolong for helping and the beginners guide provided above.
