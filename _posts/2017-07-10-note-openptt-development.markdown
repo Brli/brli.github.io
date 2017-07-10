@@ -81,6 +81,20 @@ HINT: For a faster emulator, use an Intel System Image and install the HAXM devi
 The hint commands works
 
 4.
+```
+BUILD SUCCESSFUL
+
+Total time: 23.028 secs
+Built the following apk(s):
+        /home/brli/.local/project/OpenPTT/platforms/android/build/outputs/apk/android-debug.apk
+ANDROID_HOME=/opt/android-sdk
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+No target specified and no devices found, deploying to emulator
+No emulator specified, defaulting to Pixel_XL_API_25
+Waiting for emulator to start...
+PANIC: Cannot find AVD system path. Please define ANDROID_SDK_ROOT
+```
+
 `ANDROID_SDK_ROOT` is `~/Android/Sdk/`
 
 
