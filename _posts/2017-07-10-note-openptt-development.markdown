@@ -101,3 +101,6 @@ PANIC: Cannot find AVD system path. Please define ANDROID_SDK_ROOT
 ### Kudos
 
 @ettoolong for helping and the beginners guide provided above.
+
+reference to android API version vs. release version
+https://source.android.com/source/build-numbers
