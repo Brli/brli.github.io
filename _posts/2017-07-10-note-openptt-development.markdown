@@ -22,8 +22,8 @@ Your system should have node, npm, cordova installed
     
     - `npm install -g cordova`
     
-[Ref.] (https://docs.google.com/presentation/d/1CBTBGTNshtj4UhBp-x1N8KVy8VQmuECBbXwZiBK_1p8/edit?usp=sharing)
-[Ref. 2] (https://github.com/OpenPTT/OpenPTT/wiki/GettingStarted-ZH-TW "GettingStarted zh_TW")
+[Ref.](https://docs.google.com/presentation/d/1CBTBGTNshtj4UhBp-x1N8KVy8VQmuECBbXwZiBK_1p8/edit?usp=sharing)
+[Ref. 2](https://github.com/OpenPTT/OpenPTT/wiki/GettingStarted-ZH-TW "GettingStarted zh_TW")
 
 ### Building the Dependency Tree
 
