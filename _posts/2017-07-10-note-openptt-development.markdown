@@ -35,8 +35,7 @@ Your system should have node, npm, cordova installed
 
 ### Troubleshooting
 
-1. 
-
+1.
 ```
 error: /tmp/OpenPTT/OpenPTT/platforms/android/gradlew: Command failed with exit code 1 Error output:
 FAILURE: Build failed with an exception.
@@ -55,8 +54,7 @@ Run with --stacktrace option to get the stack trace. Run with --info or --debug 
 
 - install r25 version of `android-platform`, `android-sdk`, and `android-sdk-build-tools` from AUR
 
-2. 
-
+2.
 ```
 Building Angular 2 application into "./www" directory.
 /bin/sh: ng：command not found
@@ -70,8 +68,7 @@ This is a simple _PATH_ problem, check your shell's path export method
 `$ export PATH=$PATH:$PWD/node_modules/.bin`
 ```
 
-3. 
-
+3.
 ```
 target specified and no devices found, deploying to emulator
 Error: No emulator images (avds) found.
@@ -82,6 +79,5 @@ HINT: For a faster emulator, use an Intel System Image and install the HAXM devi
 
 The hint commands works
 
-4. 
-
+4.
 `ANDROID_SDK_ROOT` is `~/Android/Sdk/`
