@@ -47,7 +47,7 @@ Then, after reboot...dah!!! I was dropped to busybox rescue shell...
 - Append `init=/sbin/bash` to GRUB and drop myself back to bash, and pacman -U from cache.
 - Checked that /sbin/init is symlink to ../lib/systemd/systemd the real binary.
 - Since the package is reinstalled, the system boots fine.
-- Install the cache with --force again due to the prior reinstall wasn't finished with normal pacman process.
+- Install the cache with `--force` again due to the prior reinstall wasn't finished with normal pacman process.
 - Uninstall again the package.
 - Edit /etc/default/grub and append init=/lib/systemd/systemd to LINUX_CMDLINE
 - Generate new grub config
