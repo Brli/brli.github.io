@@ -95,8 +95,32 @@ Waiting for emulator to start...
 PANIC: Cannot find AVD system path. Please define ANDROID_SDK_ROOT
 ```
 
-`ANDROID_SDK_ROOT` is `~/Android/Sdk/`
+- `export ANDROID_SDK_ROOT=$HOME/Android/Sdk/`
 
+5.
+```
+Error: Command failed: ng build --target=production --environment=prod --output-path www/ --base-href .
+As a forewarning, we are moving the CLI npm package to "@angular/cli" with the next release,
+which will only support Node 6.9 and greater. This package will be officially deprecated
+shortly after.
+
+To disable this warning use "ng set --global warnings.packageDeprecation=false".
+
+You have to be inside an angular-cli project in order to use the build command.
+```
+
+Probably due to [this](https://github.com/Brli/OpenPTT/commit/a2c602a7439c09f50750a2fbc9ffb788a445d65a) commit, please check your angular cli version
+
+```
+ng --version
+---
+@angular/cli: 1.2.0
+node: 8.1.3
+os: linux x64
+(...)
+```
+
+Note the first line, it shouldn't be the legacy `angular-cli: 1.0.0-beta`
 
 ### Kudos
 
