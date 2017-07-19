@@ -124,7 +124,7 @@ Note the first line, it shouldn't be the legacy `angular-cli: 1.0.0-beta`
 
 ### Kudos
 
-@ettoolong for helping and the beginners guide provided above.
+[@ettoolong](https://github.com/ettoolong) for helping and the beginners guide provided above.
 
 reference to android API version vs. release version
 https://source.android.com/source/build-numbers
