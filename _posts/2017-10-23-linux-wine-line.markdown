@@ -19,38 +19,38 @@ Brief Look
 
 # 安裝流程
 
-1. 安裝 Wine and friends
+- 安裝 Wine and friends
 
 ```
 pacman -S wine wine_gecko wine_mono
 ```
 
-2. 初始化 Wine
+- 初始化 Wine
 
 ```
 LC_ALL=en_US.UTF8 WINEARCH=win32 WINEPREFIX=/path/to/wine winecfg
 ```
 
-3. 準備你的安裝檔
+- 準備你的安裝檔
 
 LineInst.exe
 
-4. 安裝
+- 安裝
 
 LC_ALL=en_US.UTF8 wine LineInst.exe
 
 > 可以在安裝過程發現，現在的 Line 是 Qt5 寫的應用程式
 
-5. 順利執行
+- 順利執行
 
-6. 修改 LINE.desktop
+- 修改 LINE.desktop
 
 > 這裡用的是 Windows 7 容器
 > 位置 /path/to/wine/drive_c/users/username/Desktop/LINE.desktop
 
-- 用編輯器打開
-- 在 `Exec=env` 後面加上 `LC_ALL=en_US.UTF8`
-- 儲存後關閉
+  - 用編輯器打開
+  - 在 `Exec=env` 後面加上 `LC_ALL=en_US.UTF8`
+  - 儲存後關閉
 
 # 客製化
 
