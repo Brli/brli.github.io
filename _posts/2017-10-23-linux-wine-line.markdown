@@ -62,7 +62,7 @@ LC_ALL=en_US.UTF8 wine LineInst.exe
 
 # 小 bug
 
-![wine-line-bug.png](https://github.com/Brli/brli.github.io/blob/master/_images/wine-line-bug.png)
+![wine-line-bug.png](https://raw.githubusercontent.com/Brli/brli.github.io/master/_images/wine-line-bug.png)
 
 # 回報上游
 
