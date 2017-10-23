@@ -7,8 +7,9 @@ categories: line wine
 
 TL;DR
   遇到 i18n 問題， `LC_ALL=en_US.UTF8` 下去就對了！
+
 Brief Look
-[wine-line.png]()
+![wine-line.png](https://raw.githubusercontent.com/Brli/brli.github.io/master/_images/wine-line.png)
 
 # 安裝環境
 
@@ -59,8 +60,8 @@ LC_ALL=en_US.UTF8 wine LineInst.exe
 
 # 小 bug
 
-[wine-line-bug.png]()
+![wine-line-bug.png](https://github.com/Brli/brli.github.io/blob/master/_images/wine-line-bug.png)
 
 # 回報上游
 
-[WineHQ]()
+[WineHQ](https://appdb.winehq.org/objectManager.php?sClass=version&iId=35664)
