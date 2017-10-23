@@ -46,7 +46,7 @@ LC_ALL=en_US.UTF8 wine LineInst.exe
 6. 修改 LINE.desktop
 
 > 這裡用的是 Windows 7 容器
-> 位置 /path/to/wine/drive_c/users/<username>/Desktop/LINE.desktop
+> 位置 /path/to/wine/drive_c/users/username/Desktop/LINE.desktop
 
 - 用編輯器打開
 - 在 `Exec=env` 後面加上 `LC_ALL=en_US.UTF8`
