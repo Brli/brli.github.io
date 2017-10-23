@@ -37,7 +37,9 @@ LineInst.exe
 
 - 安裝
 
+```
 LC_ALL=en_US.UTF8 wine LineInst.exe
+```
 
 > 可以在安裝過程發現，現在的 Line 是 Qt5 寫的應用程式
 
