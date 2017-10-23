@@ -13,9 +13,9 @@ Brief Look
 
 # 安裝環境
 
-OS: Arch Linux
-Wine: 2.19
-LINE: 5.3.3.1519
+- OS: Arch Linux
+- Wine: 2.19
+- LINE: 5.3.3.1519
 
 # 安裝流程
 
