@@ -139,7 +139,7 @@ $ sudo systemd-nspawn -D /rootpath --user=*username* --setenv=DISPLAY=:1 --bind=
 最後最後
 ====
 
-感謝[@whiteglint](https://github.com/whiteglint) 長輩校正若干typo
+感謝[@whitglint](https://github.com/whitglint) 長輩校正若干typo
 
 [1]: https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman "上游的原始檔"
 [2]: https://git.archlinux.org/svntogit/packages.git/plain/trunk/mirrorlist?h=packages/pacman-mirrorlist "上游的原始檔"
