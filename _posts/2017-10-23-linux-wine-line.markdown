@@ -64,6 +64,8 @@ LC_ALL=en_US.UTF8 wine LineInst.exe
 
 ![wine-line-bug.png](https://raw.githubusercontent.com/Brli/brli.github.io/master/_images/wine-line-bug.png)
 
+Bypass: 在 Winecfg 中「顯示(Graphics)」的部份，選擇「模擬一個桌面」
+
 # 回報上游
 
 [WineHQ](https://appdb.winehq.org/objectManager.php?sClass=version&iId=35664)
