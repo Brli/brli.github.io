@@ -42,6 +42,7 @@ LC_ALL=en_US.UTF8 wine LineInst.exe
 ```
 
 > 可以在安裝過程發現，現在的 Line 是 Qt5 寫的應用程式
+![wine qt5](https://raw.githubusercontent.com/Brli/brli.github.io/master/_images/wine-qt5.png)
 
 - 順利執行
 
