@@ -50,7 +50,7 @@ LC_ALL=en_US.UTF8 wine LineInst.exe
 
 > 這裡用的是 Windows 7 容器
 
-> 位置 /path/to/wine/drive_c/users/username/Desktop/LINE.desktop
+`/home/.local/share/applications/wine/LINE.desktop`
 
   - 用編輯器打開
   - 在 `Exec=env` 後面加上 `LC_ALL=en_US.UTF8`
@@ -61,6 +61,7 @@ LC_ALL=en_US.UTF8 wine LineInst.exe
 1. winecfg 裡，可以設定成 120dpi 左右
 2. 在 regedit 載入[中文化的 reg](https://gist.github.com/Brli/355f275a5967e82fa044470f6a85d2a0)
 > 網路上有其他類似的東西
+3. 如果有要使用桌面整合的話，要記得去 ~/Desktop 裡面改掉 LINE.desktop 的 Exec=
 
 # 小 bug
 
