@@ -6,7 +6,7 @@ categories: announcement
 pinned: true
 ---
 
-__This site uses Google GA for simple visitor analysis.__
+__This site uses Google GA for simple visitor caculation.__
 __I personally just want to know if there is any visitors around.__
 __And I wouldn't use this information for any ad-sense things.__
 __But, I can't guarantee any default third-party usage of this information shared by Google.__
