@@ -13,7 +13,7 @@ categories: chakra
 
 ![lappy](https://imgur.com/bNBSWFx.jpg)
 
-因為剛好前輩在經營客製化筆電，我剛好被打到
+因為剛好前輩在[經營客製化筆電](https://www.facebook.com/groups/1579037632209469/)，我剛好被打到
 
 於是跟喜傑獅訂了一台新電腦（價位跟前者差不多，但是規格飆升許多）
 
