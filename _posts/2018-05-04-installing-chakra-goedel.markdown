@@ -109,3 +109,9 @@ __可以服用 [font-null 包](https://gist.github.com/Brli/86562aa126a49169c6ba
 所以安裝一下 `fcitx-chewing` 後
 
 直接從 [gist](https://gist.github.com/Brli/ea1809e411fc0ee77168) 上抓了 `~.xprofile` 重新登入後就可以囉
+
+## 後記——總時數
+
+從下載 ISO、燒錄到隨身碟，到安裝完成大約一個半小時
+
+主要是因為不需要再調整各個程式的設定以及桌面
