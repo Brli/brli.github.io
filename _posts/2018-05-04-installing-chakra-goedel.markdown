@@ -15,11 +15,11 @@ categories: chakra
 
 因為剛好前輩在[經營客製化筆電](https://www.facebook.com/groups/1579037632209469/)，我剛好被打到
 
-於是跟喜傑獅訂了一台新電腦（價位跟前者差不多，但是規格飆升許多）
+於是跟喜傑獅訂了一台新電腦（價位跟那台 ASUS 差不多，但是規格飆升許多）
 
-且因為作業有點重，希望能穩定跑新軟體而不想自己幫社群當測試羊，所以轉移到 Arch
+且因為軟體方面的作業有點重，希望能穩定跑新軟體而不想自己幫社群當測試羊，所以轉移到 Arch
 
-那…舊電腦雖然頭部很危險，但是折起來外接螢幕還是能跑
+那…舊電腦雖然頭部很危險，但是折起來外接螢幕還是能跑（而且新筆電故意不配獨顯）
 
 那就拿來安裝 Chakra 吧！順便底看看有什麼罷格
 
@@ -71,7 +71,7 @@ __現在就算是 EFI 也預設是 GRUB 開機了呢！感謝團隊 讚嘆團隊
 
 參考 Arch Wiki 的 [Optimus](https://wiki.archlinux.org/index.php/NVIDIA_Optimus) 頁面
 
-可以直接安裝 nvidia，不需要動東動西
+可以直接安裝 `nvidia` 驅動程式，不需要動東動西
 
 `# pacman -S nvidia`
 
@@ -108,7 +108,7 @@ __可以服用 [font-null 包](https://gist.github.com/Brli/86562aa126a49169c6ba
 
 所以安裝一下 `fcitx-chewing` 後
 
-直接從 [gist](https://gist.github.com/Brli/ea1809e411fc0ee77168) 上抓了 `~.xprofile` 重新登入後就可以囉
+直接從 [gist](https://gist.github.com/Brli/ea1809e411fc0ee77168) 上抓下來存成 `~/.xprofile` 重新登入後就可以囉
 
 ## 後記——總時數
 
