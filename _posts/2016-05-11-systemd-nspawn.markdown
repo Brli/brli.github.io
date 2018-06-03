@@ -21,7 +21,9 @@ categories: systemd container
 =======
 
 一個 systemd(ver>183) 系統
+
 一個支援 bootstrap 的套件管理員（debootstrap, pacstarp, dnf, etc.）
+
 假如你要跨系統，就得確認你能成功用主機系統的 toolchain 編出你要的軟體(例如在 Debian 系中編譯 pacman)
 
 安裝過程
@@ -29,13 +31,13 @@ categories: systemd container
 
 1. 首先取得 Arch Linux 的 pacman.conf [備註1][1]
 
-```bash
+```terminal
 $ wget 'https://git.archlinux.org/svntogit/packages.git/plain/trunk/pacman.conf.x86_64?h=packages/pacman' -O pacman.conf
 ```
 
 2. 假設主機系統不是 Arch Linux，那表示我們並沒有對 pacman 作簽章，也就表示 pacman 會在驗證下載的安裝檔時出錯，所以我們得把 SigLevel 調低
 
-```bash
+```terminal
 $ sed 's/Required DatabaseOptional/Never/g' -i pacman.conf
 ```
 
@@ -48,13 +50,13 @@ $ sed 's/Required DatabaseOptional/Never/g' -i pacman.conf
 4. 安裝 Arch Linux 系統
 (依賴 arch-install-scripts)
 
-```bash
-\# pacstrap -GM -C /path/to/the/pacman.conf -d /path/to/the/root/of/the/vm base base-devel
+```terminal
+# pacstrap -GM -C /path/to/the/pacman.conf -d /path/to/the/root/of/the/vm base base-devel
 ```
 
 5. 進入那個子系統
 
-```bash
+```terminal
 $ sudo systemd-nspawn -D /rootpath
 ```
 
@@ -64,17 +66,17 @@ $ sudo systemd-nspawn -D /rootpath
    * 調整語系 
    * 調整 pacman
 
-```bash
-\# pacman-key --init
-\# pacman-key --populate archlinux
-\# pacman -Syu
+```terminal
+# pacman-key --init
+# pacman-key --populate archlinux
+# pacman -Syu
 ```
 
    * 新增使用者
    * 安裝你要用的圖形界面
 
-```bash
-\# pacman -S mate
+```terminal
+# pacman -S mate
 ```
 
 傳遞影音
@@ -84,21 +86,21 @@ $ sudo systemd-nspawn -D /rootpath
 
 1. 在主系統上開啟一個分離的 X 環境
 
-```bash
+```terminal
 $ Xephyr -screen 1280x720 -glamor +xinerama -noreset :1
 ```
 
 2. 使用新增的使用者登入你的容器
 
-```bash
-$ sudo systemd-nspawn -D /rootpath --user=*username* --setenv=DISPLAY=:1
+```terminal
+$ sudo systemd-nspawn -D /rootpath --user=$USER --setenv=DISPLAY=:1
 ```
 
    **這裡的`:1`務必要對應第一步最後面啟動的位置**
 
 3. 在容器中使用正確的方式開啟 X 環境
 
-```bash
+```terminal
 $ startx
 ```
 
@@ -108,7 +110,7 @@ $ startx
 
     在主系統上以一般使用者執行
 
-```bash
+```terminal
 $ pactl load-module module-native-protocol-unix socket=/path/to/socket
 ```
 
@@ -116,8 +118,8 @@ $ pactl load-module module-native-protocol-unix socket=/path/to/socket
  
 5. 使用正確的環境變數登入你的容器（當然，容器內也得安裝 PulseAudio ）
 
-```bash
-$ sudo systemd-nspawn -D /rootpath --user=*username* --setenv=DISPLAY=:1 --bind=/socketpath --setenv=PULSE_SERVER=/socketpath
+```terminal
+$ sudo systemd-nspawn -D /rootpath --user=$USER --setenv=DISPLAY=:1 --bind=/socketpath --setenv=PULSE_SERVER=/socketpath
 ```
 
 6. 這時候你就可以盡情的、無痕的，使用這個虛擬機ギリギリ愛了！
