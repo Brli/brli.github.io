@@ -22,3 +22,5 @@ disqus_shortname: brli
 ua: UA-41471230-4
 # Build settings
 markdown: kramdown
+
+theme: jekyll-theme-minimal
