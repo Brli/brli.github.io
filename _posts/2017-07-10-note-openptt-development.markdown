@@ -66,8 +66,8 @@ This error would occur if you do not install angular-cli with root permission (t
 
 This is a simple _PATH_ problem, check your shell's path export method
 
-```bash
-`$ export PATH=$PATH:$PWD/node_modules/.bin`
+```terminal
+$ export PATH=$PATH:$PWD/node_modules/.bin
 ```
 
 3.
