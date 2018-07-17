@@ -5,7 +5,7 @@ date:   2018-07-17 09:50:00 +0800
 categories: chakra packaging
 ---
 
-We're planning to upgrade [Gimp](https://gimp.org) to [2.10.4](https://www.gimp.org/release-notes/gimp-2.10.html)
+We're planning to upgrade [Gimp](https://gimp.org) to [2.10.4](https://code.chakralinux.org/packages/gtk/issues/8)
 
 It introduce new dependencies and give these errors while configuring
 
@@ -105,3 +105,5 @@ After re-synced the repository, we rebuild gegl first.
 Then, we upgrade gimp.
 
 Now that we have updated Gimp in Chakra!
+
+__Thanks @AlmAck and @FranzMari for importing the missing dependencies and test the glib2 update__
