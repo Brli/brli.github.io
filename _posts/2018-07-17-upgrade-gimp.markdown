@@ -2,7 +2,7 @@
 layout: post
 title:  "Upgrade Gimp"
 date:   2018-07-17 09:50:00 +0800
-categories: chakra packaging
+tag: chakra packaging
 ---
 
 We're planning to upgrade [Gimp](https://gimp.org) to [2.10.4](https://code.chakralinux.org/packages/gtk/issues/8)

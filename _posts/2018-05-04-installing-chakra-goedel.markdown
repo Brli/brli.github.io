@@ -2,7 +2,7 @@
 layout: post
 title:  "安裝 Chakra Goedel"
 date:   2018-05-04 17:00:00 +0800
-categories: chakra
+tag: chakra
 ---
 
 ## 前情提要

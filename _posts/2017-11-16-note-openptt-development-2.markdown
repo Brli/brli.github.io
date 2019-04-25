@@ -2,7 +2,7 @@
 layout: post
 title:  "Note on OpenPTT Development 2"
 date:   2017-11-16 13:00:00 +0800
-categories: openptt android nodejs cordova
+tag: openptt android nodejs cordova
 ---
 
 ### Prerequisite
