@@ -28,19 +28,6 @@ permalink: /about/
  
  * Senior translator for FOSS softwares and web tools. eg. [1][]
 
-## Profession at: ##
-
- * Customer service
-
-  - desktop customization, user experience optimization
-  
-  - general community support, forum administration, patch search and application
-
- * Bash scripting
-
-  - package management tools aka. APT, pacman.
-  
-  - package dependencies tree maintenance.
 
 [1]: https://www.transifex.com/user/profile/brli7848/  "Transifex"
 [2]: https://github.com/brli7848  "Github"

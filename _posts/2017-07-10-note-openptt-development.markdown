@@ -2,7 +2,7 @@
 layout: post
 title:  "Note on OpenPTT Development"
 date:   2017-07-10 14:00:00 +0800
-categories: openptt android nodejs cordova
+tag: openptt android nodejs cordova
 ---
 
 This is a side note on deploying environment for Angular2+OnsenUI+Cordova project.
