@@ -88,7 +88,11 @@ Bypass: 在 Winecfg 中「顯示(Graphics)」的部份，選擇「模擬一個�
 # (10/29 Update) 後記
 
 寫完才發現，這樣就沒藉口跟老闆說晚上無法 On-call 惹 QQ
+
 真是一則以喜，一則以憂（？
+
 另外一方面，也可能可以開始考慮從 Chrome App 過度來用原生（誤）的軟體
+
 然後想到這篇文章：[Google 打算停止支援 Chrome App](https://www.theverge.com/2016/8/19/12555052/google-shutting-down-chrome-apps)
+
 不過現在都2017下旬了，我的 Chrome 版還是活跳跳der，所以其實也很難講啦 ^^"
