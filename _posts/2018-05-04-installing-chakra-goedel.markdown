@@ -35,19 +35,19 @@ tag: chakra
 
 ## 安裝過程以及小便利
 
-![img](https://i.imgur.com/gGYPtg6.png)
+![img]({{ site.url }}/assets/gGYPtg6.png)
 
 Calameres 很聰明的幫你找出可能的家目錄，可以直接用滑鼠搞定分區跟掛載問題
 
-![img](https://imgur.com/7C3fZUf.png)
+![img]({{ site.url }}/assets/7C3fZUf.png)
 
-![img](https://imgur.com/xitcPrV.png)
+![img]({{ site.url }}/assets/xitcPrV.png)
 
 頓號好像怪怪的…有空來修
 
 ## 錯誤
 
-![img](https://imgur.com/7iLYQZn.png)
+![img]({{ site.url }}/assets/7iLYQZn.png)
 
 主要是一些 `akonadi_resource` 的檔案，不曉得是不是 btrfs 壞檔？
 
@@ -61,7 +61,7 @@ __現在就算是 EFI 也預設是 GRUB 開機了呢！感謝團隊 讚嘆團隊
 
 ## 更新
 
-![img](https://imgur.com/MywTWz7.png)
+![img]({{ site.url }}/assets/MywTWz7.png)
 
 怕.jpg
 

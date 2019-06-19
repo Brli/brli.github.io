@@ -124,7 +124,7 @@ $ sudo systemd-nspawn -D /rootpath --user=$USER --setenv=DISPLAY=:1 --bind=/sock
 
 6. 這時候你就可以盡情的、無痕的，使用這個虛擬機ギリギリ愛了！
 
-  ![示意圖]({{ site.assets_url }}/_images/systemd-nspawn-example.jpg)
+  ![示意圖]({{ site.url }}/assets/systemd-nspawn-example.jpg)
   
 後記
 ====

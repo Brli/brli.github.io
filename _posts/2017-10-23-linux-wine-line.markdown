@@ -10,7 +10,7 @@ TL;DR
   遇到 i18n 問題， `LC_ALL=en_US.UTF8` 下去就對了！
 
 Brief Look
-![wine-line.png](https://raw.githubusercontent.com/Brli/brli.github.io/master/_images/wine-line.png)
+![wine-line.png]({{ site.url }}/assets/wine-line.png)
 
 # 安裝環境
 
@@ -43,7 +43,7 @@ LC_ALL=en_US.UTF8 wine LineInst.exe
 ```
 
 > 可以在安裝過程發現，現在的 Line 是 Qt5 寫的應用程式
-![wine qt5](https://raw.githubusercontent.com/Brli/brli.github.io/master/_images/wine-qt5.png)
+![wine qt5]({{ site.url }}/assets/wine-qt5.png)
 
 - 順利執行
 
@@ -75,7 +75,7 @@ LC_ALL=en_US.UTF8 wine LineInst.exe
 
 # 小 bug
 
-![wine-line-bug.png](https://raw.githubusercontent.com/Brli/brli.github.io/master/_images/wine-line-bug.png)
+![wine-line-bug.png]({{ site.url }}/assets/wine-line-bug.png)
 
 Bypass: 在 Winecfg 中「顯示(Graphics)」的部份，選擇「模擬一個桌面」
 
