@@ -5,7 +5,7 @@ date:   2019-06-19 11:30:00 +0800
 ---
 
 
-繼 [Linux 下使用 Wine 安裝 NAVER Line]() 後許久，我後來還是回到原生的解法——使用 Chrome 商店的 LINE 擴充
+繼 [Linux 下使用 Wine 安裝 NAVER Line](https://brli.github.io/2017/10/23/linux-wine-line.html) 後許久，我後來還是回到原生的解法——使用 Chrome 商店的 LINE 擴充
 
 但是要使用 LINE 的流程變成：
 
