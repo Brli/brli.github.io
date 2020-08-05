@@ -17,7 +17,7 @@ date:   2019-06-19 11:30:00 +0800
 
 ## 一切都是從一個小小的發現開始的
 
-![Finshed download]({{ site.url }}/assets/Screenshot_20190619_114823.png)
+![Finshed download](/assets/Screenshot_20190619_114823.png)
 
 原來現在的 LINE 擴充根本只是一個有限制視窗大小的網頁呀！
 
@@ -33,7 +33,7 @@ $ chromium [URL]
 
 ## 萬用的 F12
 
-![Devtool]({{ site.url }}/assets/Screenshot_20190619_114743.png)
+![Devtool](/assets/Screenshot_20190619_114743.png)
 
 好的，我們已經得到他在電腦上的位址惹
 

@@ -4,7 +4,7 @@ title:  "From Virtualbox to QEMU"
 date:   2019-05-02 16:10:00 +0800
 ---
 
-![BSoD after update]({{ site.url }}/assets/virtualbox-windows7.png)
+![BSoD after update](/assets/virtualbox-windows7.png)
 
 After recent update of Virtualbox to version `6.0.6-1`, my VM becomes unaccessible for no reason.
 

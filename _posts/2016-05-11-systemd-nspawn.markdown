@@ -43,7 +43,7 @@ $ sed 's/Required DatabaseOptional/Never/g' -i pacman.conf
 
 3. (選擇性)你也可以調整一下你要用的鏡像站 [備註2][2]
 
-   把 `Include = /etc/pacman.d/mirrorlist` 
+   把 `Include = /etc/pacman.d/mirrorlist`
 
    改成 `Server = url://$repo/os/$arch`
 
@@ -63,7 +63,7 @@ $ sudo systemd-nspawn -D /rootpath
 6. 作一些基本的 Arch Linux 調整吧
 
    * 調整時區
-   * 調整語系 
+   * 調整語系
    * 調整 pacman
 
 ```terminal
@@ -115,7 +115,7 @@ $ pactl load-module module-native-protocol-unix socket=/path/to/socket
 ```
 
     這會讓主系統上的 PulseAudio 有一個新的 socket litsener
- 
+
 5. 使用正確的環境變數登入你的容器（當然，容器內也得安裝 PulseAudio ）
 
 ```terminal
@@ -124,8 +124,8 @@ $ sudo systemd-nspawn -D /rootpath --user=$USER --setenv=DISPLAY=:1 --bind=/sock
 
 6. 這時候你就可以盡情的、無痕的，使用這個虛擬機ギリギリ愛了！
 
-  ![示意圖]({{ site.url }}/assets/systemd-nspawn-example.jpg)
-  
+  ![示意圖](/assets/systemd-nspawn-example.jpg)
+
 後記
 ====
 
