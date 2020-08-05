@@ -11,7 +11,7 @@ tag: chakra
 
 …不小心斷頭
 
-![lappy](https://imgur.com/bNBSWFx.jpg)
+![lappy](/assets/bNBSWFx.jpg)
 
 因為剛好前輩在[經營客製化筆電](https://www.facebook.com/groups/1579037632209469/)，我剛好被打到
 
