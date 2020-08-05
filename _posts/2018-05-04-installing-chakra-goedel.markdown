@@ -7,7 +7,7 @@ tag: chakra
 
 ## 前情提要
 
-原本的電腦是 ASUS Zenbook 
+原本的電腦是 ASUS Zenbook
 
 …不小心斷頭
 
@@ -95,7 +95,7 @@ __!!!不然畫面會變得很奇怪!!!__
 
 ## 移除不需要的語言包、字型檔
 
-__可以服用 [font-null 包](https://gist.github.com/Brli/86562aa126a49169c6ba)__
+__可以服用 [font-null 包](https://gitlab.com/BrLi/brli-aur/-/tree/ttf-fonts-null)__
 
 ## 安裝 Firefox
 
@@ -114,4 +114,6 @@ __可以服用 [font-null 包](https://gist.github.com/Brli/86562aa126a49169c6ba
 
 從下載 ISO、燒錄到隨身碟，到安裝完成大約一個半小時
 
-主要是因為不需要再調整各個程式的設定以及桌面
+跟 Windows 10 相比，不需要再安裝各種工具軟體以及 Office
+
+跟其他 Linux 相比，不用再調整各個程式的設定以及桌面（當然不失自由度）
