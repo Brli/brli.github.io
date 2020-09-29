@@ -19,29 +19,27 @@ Brief Look
 - LINE: 5.3.3.1519
 
 > 2020-09-30 update
-> Wine: `wine-staging` 5.18
-> LINE: 6.3.2.2338
+```
+  Wine: wine-staging 5.18
+  LINE: 6.3.2.2338
+```
 
 # 安裝流程
 
 - 安裝 Wine and friends
 
 > 2020-09-30 update
-> `pacman -S wine wine_gecko wine_mono winetricks
-
 ```
-pacman -S wine wine_gecko wine_mono
+  pacman -S wine wine_gecko wine_mono winetricks
 ```
 
 - 初始化 Wine
 
 > 2020-09-30 update
-> `LC_ALL=en_US.UTF8 WINEPREFIX=/path/to/wine winecfg`
-> 使用 Windows 10 環境
-> `LC_ALL=en_US.UTF8 WINEPREFIX=/path/to/wine winetricks vcrun2019`
-
 ```
-LC_ALL=en_US.UTF8 WINEARCH=win32 WINEPREFIX=/path/to/wine winecfg
+  `LC_ALL=en_US.UTF8 WINEPREFIX=/path/to/wine winecfg`
+  使用 Windows 10 環境
+  `LC_ALL=en_US.UTF8 WINEPREFIX=/path/to/wine winetricks vcrun2019`
 ```
 
 - 準備你的安裝檔
@@ -54,8 +52,7 @@ LC_ALL=en_US.UTF8 WINEARCH=win32 WINEPREFIX=/path/to/wine winecfg
 LC_ALL=en_US.UTF8 wine LineInst.exe
 ```
 
-> 2020-09-30 update
-> 語系選擇 English 安裝
+> - (2020-09-30 update) 語系選擇 English 安裝
 
 > 可以在安裝過程發現，現在的 Line 是 Qt5 寫的應用程式
 ![wine qt5](/assets/wine-qt5.png)
@@ -63,8 +60,10 @@ LC_ALL=en_US.UTF8 wine LineInst.exe
 - 順利執行
 
 > 2020-09-30 update
-> 初次執行不要登入
-> 左上方三橫線，進去設定，關掉預設啟用的按系統調整佈景主題
+```
+  初次執行不要登入
+  左上方三橫線，進去設定，關掉預設啟用的按系統調整佈景主題
+```
 
 - 修改 LINE.desktop
 
