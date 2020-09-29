@@ -18,9 +18,16 @@ Brief Look
 - Wine: 2.19
 - LINE: 5.3.3.1519
 
+> 2020-09-30 update
+> Wine: `wine-staging` 5.18
+> LINE: 6.3.2.2338
+
 # 安裝流程
 
 - 安裝 Wine and friends
+
+> 2020-09-30 update
+> `pacman -S wine wine_gecko wine_mono winetricks
 
 ```
 pacman -S wine wine_gecko wine_mono
@@ -28,13 +35,18 @@ pacman -S wine wine_gecko wine_mono
 
 - 初始化 Wine
 
+> 2020-09-30 update
+> `LC_ALL=en_US.UTF8 WINEPREFIX=/path/to/wine winecfg`
+> 使用 Windows 10 環境
+> `LC_ALL=en_US.UTF8 WINEPREFIX=/path/to/wine winetricks vcrun2019`
+
 ```
 LC_ALL=en_US.UTF8 WINEARCH=win32 WINEPREFIX=/path/to/wine winecfg
 ```
 
 - 準備你的安裝檔
 
-LineInst.exe
+[LineInst.exe](https://desktop.line-scdn.net/win/new/LineInst.exe)
 
 - 安裝
 
@@ -42,10 +54,17 @@ LineInst.exe
 LC_ALL=en_US.UTF8 wine LineInst.exe
 ```
 
+> 2020-09-30 update
+> 語系選擇 English 安裝
+
 > 可以在安裝過程發現，現在的 Line 是 Qt5 寫的應用程式
 ![wine qt5](/assets/wine-qt5.png)
 
 - 順利執行
+
+> 2020-09-30 update
+> 初次執行不要登入
+> 左上方三橫線，進去設定，關掉預設啟用的按系統調整佈景主題
 
 - 修改 LINE.desktop
 
@@ -96,3 +115,9 @@ Bypass: 在 Winecfg 中「顯示(Graphics)」的部份，選擇「模擬一個�
 然後想到這篇文章：[Google 打算停止支援 Chrome App](https://www.theverge.com/2016/8/19/12555052/google-shutting-down-chrome-apps)
 
 不過現在都2017下旬了，我的 Chrome 版還是活跳跳der，所以其實也很難講啦 ^^"
+
+# (2020-09-30 Update)
+
+- 修正環境
+- 修正安裝流程
+- 新增障礙排除
