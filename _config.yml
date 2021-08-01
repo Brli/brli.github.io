@@ -18,7 +18,6 @@ url: "https://brli.github.io" # the base hostname & protocol for your site
 twitter_username: 131273y37848
 github_username:  brli
 gitlab_username:  brli7848
-disqus_shortname: brli
 ua: UA-41471230-4
 # Build settings
 markdown: kramdown
