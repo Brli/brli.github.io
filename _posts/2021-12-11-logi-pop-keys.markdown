@@ -25,31 +25,34 @@ Where I didn't notice that the emoji icons on the right edge cannot be recognize
 
 ### Keyboard mapping
 
-1. Fn reversed, aka. it is default on instead of normal F#
+1. Fn reversed, aka. it is default on instead of normal F1~F12
 
-if you don't like that behavior, just unlock it from solaar, and switch off.
+    if you don't like that behavior, just unlock it from solaar, and switch off.
 
-2. Snapshot function (Fn+F5): it is default to send composite keystrokes of Windows shortcut, aka. Ctrl+Shift+S, just map _that_ sequence to your keyboard shortcut utility of desktop environment.
+2. Snapshot function (Fn+F5): it is default to send composite keystrokes of Windows shortcut, aka. `Meta(Suprt_L)+Shift+S`, just map _that_ sequence to your keyboard shortcut utility of desktop environment.
 
 3. Wordprocessing buttons missing:
 
-There is no indication of `Home`, `Pg Up/Down`, `End` buttons, and the emoji shortcuts are unknown to linux
+    There is no indication of `Home`, `Pg Up/Down`, `End` buttons, and the emoji shortcuts are unknown to linux
 
-But it is indeed compiled into shortcut of:
+    But it is indeed compiled into shortcut of:
 
-- Fn+←: Home
-- Fn+→: End
-- Fn+↑: Page up
-- Fn+↓: Page down
+    - Fn+←: Home
+
+    - Fn+→: End
+
+    - Fn+↑: Page up
+
+    - Fn+↓: Page down
 
 4. misc:
 
-- F4: minimize all to show desktop, is mapped to `Meta(Super_L)+D`, which can then configured in shortcut utility.
+    - F4: minimize all to show desktop, is mapped to `Meta(Super_L)+D`, which can then configured in shortcut utility.
 
-- F6: mute microphone, is not implemented
+    - F6: mute microphone, is not implemented
 
-- AI assistant(?) button near delete button: not implemented.
+    - AI assistant(?) button near delete button: not implemented.
 
-- Battery level monitor: put `solaar` to tray
+    - Battery level monitor: put `solaar` to tray
 
-example: put `solaar -w hide -b solaar` to ~/.bashrc
+    example: put `solaar -w hide -b solaar` to ~/.bashrc
