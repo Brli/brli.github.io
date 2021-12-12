@@ -9,7 +9,7 @@ The [Logitech Pop Keys and Mouse](https://www.logitech.com/en-us/products/keyboa
 
 ...And, yes, I bought a set...
 
-Where I didn't notice that the emoji icons on the right edge cannot be recognized under Liunux (at least, Arch Linux™️ )
+Where I didn't notice that the emoji icons on the right edge cannot be recognized under Linux (at least, Arch Linux™️ )
 
 ## Troubleshoot Corner
 
