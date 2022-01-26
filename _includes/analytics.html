@@ -1,5 +1,5 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ua }}"></script>
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ua }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -7,4 +7,13 @@
 
 gtag('config', '{{ site.ua }}');
 </script>
+-->
 
+<script type="text/javascript">
+(function(window, document, dataLayerName, id) {
+function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString()}document.cookie=a+"="+b+d+"; path=/"}
+var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+document.write('<script src="https://relic2918.containers.piwik.pro/'+id+'.sync.js' + qPString + '"></' + 'script>');
+})(window, document, 'dataLayer', '958c5c1c-5bf3-45a4-a29e-44b6a50237e5');
+</script>
