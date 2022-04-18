@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Linux 下使用 Wine 安裝 NAVER Line"
-date:   2017-10-23 08:30:00 +0800
+date:   2022-04-19 08:30:00 +0800
 tag: line wine
 ---
 
@@ -24,6 +24,12 @@ Brief Look
   LINE: 6.3.2.2338
 ```
 
+> 2022-04-19 update
+```
+  Wine: wine-staging 7.6-1
+  LINE: 6.7.4.2508
+```
+
 # 安裝流程
 
 - 安裝 Wine and friends
@@ -35,11 +41,11 @@ Brief Look
 
 - 初始化 Wine
 
-> 2020-09-30 update
+> 2022-04-19 update
 ```
-  `LC_ALL=en_US.UTF8 WINEPREFIX=/path/to/wine winecfg`
-  使用 Windows 10 環境
-  `LC_ALL=en_US.UTF8 WINEPREFIX=/path/to/wine winetricks vcrun2019`
+  1. `LC_ALL=en_US.UTF8 WINEPREFIX=/path/to/wine winecfg`
+  2. 使用 Windows 7 環境
+  3. `LC_ALL=en_US.UTF8 WINEPREFIX=/path/to/wine winetricks vcrun2019`
 ```
 
 - 準備你的安裝檔
@@ -120,3 +126,8 @@ Bypass: 在 Winecfg 中「顯示(Graphics)」的部份，選擇「模擬一個�
 - 修正環境
 - 修正安裝流程
 - 新增障礙排除
+
+# (2022-04-19 Update)
+
+- 更新版號
+- 注意：不要使用 Windows 10 環境，不然會被更新至 7.x 版，有反破解
