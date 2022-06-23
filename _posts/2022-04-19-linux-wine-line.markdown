@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Linux 下使用 Wine 安裝 NAVER Line"
-date:   2022-04-19 08:30:00 +0800
+date:   2022-04-20 08:30:00 +0800
 tag: line wine
 ---
 
