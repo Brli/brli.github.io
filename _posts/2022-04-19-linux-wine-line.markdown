@@ -9,6 +9,8 @@ TL;DR
 
   遇到 i18n 問題， `LC_ALL=en_US.UTF8` 下去就對了！
 
+> 2022-08-10 不需要了，正常語系皆可
+
 Brief Look
 ![wine-line.png](/assets/wine-line.png)
 
@@ -43,9 +45,10 @@ Brief Look
 
 > 2022-04-19 update
 ```
-  1. `LC_ALL=en_US.UTF8 WINEPREFIX=/path/to/wine winecfg`
-  2. 使用 Windows 7 環境
-  3. `LC_ALL=en_US.UTF8 WINEPREFIX=/path/to/wine winetricks vcrun2019`
+  1. WINEARCH=win64 # 使用 64 bit wine 環境
+  2. `winecfg` 使用 Windows 10 環境
+  3. `winetricks vcrun2019`
+  4. 因為上面這個 winetricks 會改系統版本，再執行一次步驟 2.
 ```
 
 - 準備你的安裝檔
@@ -55,7 +58,7 @@ Brief Look
 - 安裝
 
 ```
-LC_ALL=en_US.UTF8 wine LineInst.exe
+wine /path/to/downloaded/LineInst.exe
 ```
 
 > - (2020-09-30 update) 語系選擇 English 安裝
@@ -131,3 +134,9 @@ Bypass: 在 Winecfg 中「顯示(Graphics)」的部份，選擇「模擬一個�
 
 - 更新版號
 - 注意：不要使用 Windows 10 環境，不然會被更新至 7.x 版，有反破解
+
+# (2022-08-10 Update)
+
+- 修正環境：不用再使用特定語系
+- 修正環境：使用 Windows 10 x64 系統
+- 關於反破解：參考[這篇](/2022/08/25/linux-wine-line.html)
