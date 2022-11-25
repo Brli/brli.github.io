@@ -24,7 +24,7 @@ You can safely skip this paragraph if you prefer other way of setting up the bas
    The hint here is to ensure you have base, base-devel, an editor, ie. vim, nano, emacs etc., git installed. `pacstrap -h` is also your good friend.
 
     ```terminal
-    # pacstrap -C /tmp/pacmman.conf -cKM /var/lib/machines/misskey base base-devel git vim
+    # pacstrap -C /tmp/pacman.conf -cKM /var/lib/machines/misskey base base-devel git vim
     ---
     -C: use alternative pacman.conf file, I choose to fetch the fresh conf from Arch's official git and edit the Include lines to Server = closest server, enable Parallel to 10
     -c: use cache in system, reduce bandwidth
