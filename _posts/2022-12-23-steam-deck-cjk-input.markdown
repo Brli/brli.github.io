@@ -7,7 +7,7 @@ tag: steam deck linux ime fcitx
 
 ## Prerequisite
 
-# Understanding of [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
+### Understanding of [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
 
 > 1. Make each program do one thing well.
 > 2. Expect the output of every program to become the input to another, as yet unknown, program.
@@ -19,7 +19,7 @@ Which turns out to the fact that
 3. the applications don't care about what input framework is chosen, as long as they are properly registered.
 4. the desktop cares no integration of input frameworks, they should care about integration to desktop on their own.
 
-# Steam Deck Shortcuts
+### Steam Deck Shortcuts
 
 1. button "X" calls out the SteamOS keyboard on Desktop mode.
 2. The keyboard dropped to **oppsite half of screen** of where **the cursor** lies.
@@ -44,7 +44,7 @@ Which turns out to the fact that
 
 ## Autostart Fcitx on Login to Desktop Mode
 
-# Copy `.desktop` from flatpak exported directory
+### Copy `.desktop` from flatpak exported directory
 
 1. Open Dolphin
 2. Click on the `> Home` above main area
@@ -61,7 +61,7 @@ Or, one liner in Konsole
 $ cp /home/.steamos/offload/var/lib/flatpak/exports/share/applications/org.fcitx.Fcitx5.desktop ~/.config/autostart/
 ```
 
-# Safeguard Fcitx over IBus
+### Safeguard Fcitx over IBus
 
 - Create a file:
 
@@ -81,7 +81,7 @@ export XIM=fcitx
 
 ## Technical Details
 
-# Side Notes
+### Side Notes
 
 - The Fcitx5 flatpak has fcitx-qt input module plugin included.
 - Even though the flatpak doesn't have gtk immodule, it works under flatpak firefox anyway.
@@ -89,7 +89,7 @@ export XIM=fcitx
 - Noted that `libchewing` is developed for general keyboard, thus the candidate number selection is based on general keyboard, instead of indication of the Steam keyboard.
 - You can edit the preference of Chewing module to use `asdfghjkl;` as selector instead.
 
-# Valve package details
+### Valve package details
 
 - interesting finding from `steamdeck-kde-presets`:
 
