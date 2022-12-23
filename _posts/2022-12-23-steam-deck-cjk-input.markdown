@@ -77,7 +77,7 @@ export XIM=fcitx
 
 ## Demo
 
-<video width="100%" src="/assets/2022-12-23.webm"></video>
+<video width="100%" controls src="/assets/2022-12-23.webm"></video>
 
 ## Technical Details
 
