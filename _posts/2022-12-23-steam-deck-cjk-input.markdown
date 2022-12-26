@@ -21,8 +21,10 @@ Which turns out to the fact that
 
 ### Steam Deck Shortcuts
 
-1. button "X" calls out the SteamOS keyboard on Desktop mode.
+1. button `"X"` calls out the SteamOS keyboard on Desktop mode.
 2. The keyboard dropped to **oppsite half of screen** of where **the cursor** lies.
+3. `L2` is mouse right click, `R2` is mouse left click.
+4. Right pad is mouse moving, left pad is scrolling.
 
 ## Flatpak Package required
 
@@ -95,5 +97,13 @@ export XIM=fcitx
 
     - `export MOZ_ENABLE_WAYLAND=1` in `/etc/profile.d/kde.sh`
     - Input method modules are exported in `/etc/xdg/plasma-workspace/env/ibus.sh`, thus we kept our own in `~/.config/plasma-workspace`, the coresponded per-user configuration directory, as shown in above tutorial.
+    - The Deck UI is running under Wayland, while plasma is traditional X11, check `/usr/share/xsessions` and `/usr/share/wayland-sessions`
+
+- Some other customizations found
+
+    - Valve choose to use `dracut` instead of default initial ramfs generator `mkinitcpio` used in regular Arch Linux.
+    - Judging by the cursor shown during transition, it is obvious that the Deck UI and desktop are orthogonal.
+    - The display manager used is SDDM.
+    - `glibc` is broken, you cannot generate locales even after unlock read-only mode.
 
 - Noted that throughout this tutorial, we didn't disable the said **readonly** status quo.
