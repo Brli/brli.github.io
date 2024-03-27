@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Make Fuji Xerox DocuPrint P115 b Works Under Linux"
+date:   2024-03-27 20:10:00 +0800
+tag: printer cups fuji xerox docuprint p115b
+---
+
+## Brief Information
+
+- Fuji Xerox DocuPrint P115 b is a low-end printer with only USB 2.0 support
+
+- Fuji Xerox provides driver of Windows based on GDI and a blob from Mac CUPS driver
+
+- Brother provides nice support for their laser printer hl1110, with lpr and cups wrapper file in rpm format.
+
+http://www.brother.com/pub/bsc/linux/dlf/hl1110lpr-3.0.1-1.i386.rpm
+http://www.brother.com/pub/bsc/linux/dlf/hl1110cupswrapper-3.0.1-1.i386.rpm
+
+- For Arch Linux user, check aur/brother-hl1118 package
+
+## Steps
+
+- Follow Arch Wiki on setting up CUPS service
+
+- Connect the USB to your PC
+
+- Follow CUPS WebUI or GUI to add Printer
+
+- Choose "Maker:Brother" and "Model:HL-1110 for CUPS" as shown in picture
+
+![fx-docuprint-p115b-cups](/assets/fx-docuprint-p115b-cups.jpg)
+
+- Print test page, and voila!
