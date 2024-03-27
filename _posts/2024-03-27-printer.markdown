@@ -13,8 +13,9 @@ tag: printer cups fuji xerox docuprint p115b
 
 - Brother provides nice support for their laser printer hl1110, with lpr and cups wrapper file in rpm format.
 
-http://www.brother.com/pub/bsc/linux/dlf/hl1110lpr-3.0.1-1.i386.rpm
-http://www.brother.com/pub/bsc/linux/dlf/hl1110cupswrapper-3.0.1-1.i386.rpm
+[hl1110lpr-3.0.1-1.i386.rpm](http://www.brother.com/pub/bsc/linux/dlf/hl1110lpr-3.0.1-1.i386.rpm)
+
+[hl1110cupswrapper-3.0.1-1.i386.rpm](http://www.brother.com/pub/bsc/linux/dlf/hl1110cupswrapper-3.0.1-1.i386.rpm)
 
 - For Arch Linux user, check aur/brother-hl1118 package
 
