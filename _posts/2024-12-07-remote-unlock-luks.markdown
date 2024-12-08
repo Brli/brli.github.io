@@ -15,7 +15,7 @@ tag: systemd initramfs systemd-boot
 
 Arch Wiki has a table of [Common Hooks](https://wiki.archlinux.org/title/Mkinitcpio#Common_hooks) for `mkinitcpio`, a tool to generate initramfs for Linux.
 
-The above two articles have revealed a possibility to work out a remote mechanism to unlock LUKS without approaching to the box.
+The above two articles have revealed a possibility to work out a remote mechanism to unlock LUKS without approaching the box.
 
 Check the three links out, they explains better than mine.
 
