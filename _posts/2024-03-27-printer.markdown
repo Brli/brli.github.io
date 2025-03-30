@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Make Fuji Xerox DocuPrint P115 b Works Under Linux"
+title:  "Make Fuji Xerox DocuPrint P115 b Work Under Linux"
 date:   2024-03-27 20:10:00 +0800
 tag: printer cups fuji xerox docuprint p115b
 ---
@@ -9,7 +9,7 @@ tag: printer cups fuji xerox docuprint p115b
 
 - Fuji Xerox DocuPrint P115 b is a low-end printer with only USB 2.0 support
 
-- Fuji Xerox provides driver of Windows based on GDI and a blob from Mac CUPS driver
+- Fuji Xerox provides driver of Windows based on GDI and a blob form Mac CUPS driver
 
 - Brother provides nice support for their laser printer hl1110, with lpr and cups wrapper file in rpm format.
 
@@ -21,7 +21,7 @@ tag: printer cups fuji xerox docuprint p115b
 
 the above source has gone
 
-please try `brlaser`, I recommend the `*-git` package, they are also in AUR.
+please try `brlaser`, I recommend the `*-git` package, those are both in AUR.
 
 upstream URL: https://github.com/Owl-Maintain/brlaser
 
