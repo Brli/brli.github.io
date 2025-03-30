@@ -26,6 +26,12 @@ Brief Look
   LINE: 6.3.2.2338
 ```
 
+> 2025-03-30
+```
+  Wine: wine 10.4-1
+  LINE: 9.7.0.3556
+```
+
 > 2022-04-19 update
 ```
   Wine: wine-staging 7.6-1
@@ -36,19 +42,17 @@ Brief Look
 
 - 安裝 Wine and friends
 
-> 2020-09-30 update
+> 2025-03-30 update package name
 ```
-  pacman -S wine wine_gecko wine_mono winetricks
+  pacman -S wine wine-gecko wine-mono winetricks
 ```
 
 - 初始化 Wine
 
-> 2022-04-19 update
+> 2025-03-30 update
 ```
-  1. WINEARCH=win64 # 使用 64 bit wine 環境
-  2. `winecfg` 使用 Windows 10 環境
-  3. `winetricks vcrun2019`
-  4. 因為上面這個 winetricks 會改系統版本，再執行一次步驟 2.
+  1. export WINEARCH=win64 # 使用 64 bit wine 環境
+  2. `winecfg` 使用 Windows 11 環境 (此為預設值)
 ```
 
 - 準備你的安裝檔
@@ -61,28 +65,7 @@ Brief Look
 wine /path/to/downloaded/LineInst.exe
 ```
 
-> - (2020-09-30 update) 語系選擇 English 安裝
-
-> 可以在安裝過程發現，現在的 Line 是 Qt5 寫的應用程式
-![wine qt5](/assets/wine-qt5.png)
-
 - 順利執行
-
-> 2020-09-30 update
-```
-  初次執行不要登入
-  左上方三橫線，進去設定，關掉預設啟用的按系統調整佈景主題
-```
-
-- 修改 LINE.desktop
-
-> 這裡用的是 Windows 7 容器（預設值）
-
-`/home/.local/share/applications/wine/LINE.desktop`
-
-  - 用編輯器打開
-  - 在 `Exec=env` 後面加上 `LC_ALL=en_US.UTF8`
-  - 儲存後關閉
 
 # 客製化
 
@@ -140,3 +123,7 @@ Bypass: 在 Winecfg 中「顯示(Graphics)」的部份，選擇「模擬一個�
 - 修正環境：不用再使用特定語系
 - 修正環境：使用 Windows 10 x64 系統
 - 關於反破解：參考[這篇](/2022/08/25/linux-wine-line.html)
+
+# (2025-03-30 Update)
+
+- 修正環境：可以使用預設 Windows 11 x64 環境
